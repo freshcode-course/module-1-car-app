@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f1" />
+    <meta
+      name="description"
+      content="DRIVE — автосалон. Знайомтеся з автомобілями Ford, Toyota та BMW."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>DRIVE — автосалон</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="DRIVE — головне меню">
+          <img class="brand-logo" src="/drive_logo_vector.svg" alt="logo" width="232" height="85" />
+        </a>
+
+        <nav class="brand-nav" aria-label="Марки автомобілів">
+          <ul>
+            <li>
+              <a href="#ford">
+                <img class="car-logo car-logo--ford" src="/cars/logo/ford.png" alt="" width="52" height="31" />
+                Ford
+                <i data-lucide="arrow-up-right" aria-hidden="true" ></i>
+              </a>
+            </li>
+            <li>
+              <a href="#toyota">
+                <img class="car-logo car-logo--toyota" src="/cars/logo/toyota.png" alt="" width="45" height="39" />
+                Toyota
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#bmw">
+                <img class="car-logo car-logo--bmw" src="/cars/logo/bmw.png" alt="" width="43" height="44" />
+                BMW
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-note">
+          <div class="premium-icon" aria-hidden="true">
+            <i data-lucide="crown" aria-hidden="true"></i>
+          </div>
+          <div class="premium-copy">
+            <p class="premium-copy__title">
+              Преміум вибір
+              <span class="premium-dot">.</span>
+            </p>
+            <p class="premium-copy__text">Авто для кожного стилю.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              Авто, що пасує <span>вашому характеру.</span>
+            </h1>
+            <p class="hero__description">
+              Три легендарні марки, якість моделей і різні погляди на задоволення від кермування.
+              Познайомтеся ближче з Ford, Toyota та BMW.
+            </p>
+            <a class="hero__button" href="#brands">
+              Дослідити бренди
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <img
+            class="hero__image"
+            src="/images/hero-mustang.png"
+            alt="Чорний Ford Mustang із червоними задніми фарами серед клубів диму"
+            width="1678"
+            height="937"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section class="brands" id="brands">
+        <div class="container">
+          <div class="brands__heading">
+            <h2 class="brands__title">
+              Три різні <span>характери.</span>
+            </h2>
+            <p class="brands__description">
+              Оберіть марку — і дізнайтеся її історію, популярні моделі та особливості.
+            </p>
+          </div>
+          <div class="brands__list">
+            <a class="brand-card brand-card--ford" href="#ford">
+              <div class="brand-card__info">
+                <img class="brand-card__logo" src="/cars/logo/ford.png" alt="" width="104" height="48" />
+                <h3 class="brand-card__title">Ford</h3>
+                <p class="brand-card__description">Сила у русі</p>
+              </div>
+              <span class="brand-card__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+              <img
+                class="brand-card__image"
+                src="/images/brand-ford.png"
+                alt="Сірий Ford Mustang, вигляд спереду та збоку"
+                width="1774"
+                height="887"
+                loading="lazy"
+              />
+            </a>
+            <a class="brand-card brand-card--toyota" href="#toyota">
+              <div class="brand-card__info">
+                <img class="brand-card__logo" src="/cars/logo/toyota.png" alt="" width="80" height="48" />
+                <h3 class="brand-card__title">Toyota</h3>
+                <p class="brand-card__description">Надійність у кожній деталі</p>
+              </div>
+              <span class="brand-card__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+              <img
+                class="brand-card__image"
+                src="/images/brand-toyota-trimmed.png"
+                alt="Білий Toyota RAV4, вигляд спереду та збоку"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+            </a>
+            <a class="brand-card brand-card--bmw" href="#bmw">
+              <div class="brand-card__info">
+                <img class="brand-card__logo" src="/cars/logo/bmw.png" alt="" width="48" height="48" />
+                <h3 class="brand-card__title">BMW</h3>
+                <p class="brand-card__description">Інновації в русі</p>
+              </div>
+              <span class="brand-card__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+              <img
+                class="brand-card__image"
+                src="/images/brand-bmw.png"
+                alt="Чорний BMW, вигляд спереду та збоку"
+                width="1774"
+                height="887"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-details brand-details--ford" id="ford">
+        <div class="container">
+          <div class="brand-banner brand-banner--ford">
+            <div class="brand-banner__content">
+              <div class="brand-banner__badge">
+                <img
+                  src="/cars/logo/ford.png"
+                  alt="Логотип Ford"
+                  width="160"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <p class="brand-banner__eyebrow">Американський характер</p>
+              <h2 class="brand-banner__title">Ford</h2>
+              <p class="brand-banner__description">Інновації, драйв та свобода бути собою.</p>
+            </div>
+            <div class="brand-banner__aside">
+              <p class="brand-banner__motto" lang="en">Born to move people</p>
+              <div class="brand-banner__foundation">
+                <p class="brand-banner__year">1903</p>
+                <p class="brand-banner__caption">Рік заснування</p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--history">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">01</span>
+              <div class="brand-section__intro">
+                <h3 class="brand-section__title">Історія бренду</h3>
+                <p class="brand-section__text">
+                  Компанію Ford Motor Company заснували у США 1903 року за участю Генрі Форда. Її
+                  автомобіль Model T став символом доступного транспорту та відкрив нову еру мобільності
+                  для мільйонів людей.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--models">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">02</span>
+              <h3 class="brand-section__title">Дві знакові моделі</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="model-card">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">Ford Mustang</h4>
+                  <p class="model-card__description">
+                    Легендарне спортивне купе з унікальним дизайном і неповторним характером.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/ford-mustang-top.png"
+                  alt="Ілюстрація Ford Mustang зверху в червоних тонах"
+                  width="1774"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+              <div class="model-card model-card--cool">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">Ford Bronco</h4>
+                  <p class="model-card__description">
+                    Позашляховик із брутальним силуетом і виразним характером.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/ford-bronco-top.png"
+                  alt="Ілюстрація Ford Bronco зверху в синіх тонах"
+                  width="1774"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--reviews">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">03</span>
+              <h3 class="brand-section__title">Враження покупців</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="review-card">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="trophy"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про Mustang</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Потужна динаміка, емоції та стиль, який надихає.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+              <div class="review-card review-card--cool">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="compass"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про Bronco</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Висока прохідність, надійність і свобода без обмежень.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-details brand-details--toyota" id="toyota">
+        <div class="container">
+          <div class="brand-banner brand-banner--toyota">
+            <div class="brand-banner__content">
+              <div class="brand-banner__badge">
+                <img
+                  src="/cars/logo/toyota.png"
+                  alt="Логотип Toyota"
+                  width="120"
+                  height="88"
+                  loading="lazy"
+                />
+              </div>
+              <p class="brand-banner__eyebrow">Японська надійність</p>
+              <h2 class="brand-banner__title">Toyota</h2>
+              <p class="brand-banner__description">
+                Надійність, комфорт і впевненість у кожній подорожі.
+              </p>
+            </div>
+            <div class="brand-banner__aside">
+              <p class="brand-banner__motto" lang="en">Ready for every day</p>
+              <div class="brand-banner__foundation">
+                <p class="brand-banner__year">1937</p>
+                <p class="brand-banner__caption">Рік заснування</p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--history">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">01</span>
+              <div class="brand-section__intro">
+                <h3 class="brand-section__title">Історія бренду</h3>
+                <p class="brand-section__text">
+                  Компанію Toyota заснували в Японії 1937 року за ініціативою Кіїчіро Тойоди. Прагнення
+                  створювати доступні та надійні автомобілі стало основою бренду, який сьогодні знайомий
+                  водіям у всьому світі.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--models">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">02</span>
+              <h3 class="brand-section__title">Дві знакові моделі</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="model-card">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">Toyota Camry</h4>
+                  <p class="model-card__description">
+                    Комфортний седан із виразним дизайном, просторим салоном і плавним ходом.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/toyota-camry-top.png"
+                  alt="Ілюстрація Toyota Camry зверху в червоних тонах"
+                  width="1774"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+              <div class="model-card model-card--cool">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">Toyota RAV4</h4>
+                  <p class="model-card__description">
+                    Універсальний кросовер для міських маршрутів, сімейних подорожей і нових пригод.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/toyota-rav4-top.png"
+                  alt="Ілюстрація Toyota RAV4 зверху в синіх тонах"
+                  width="1774"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--reviews">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">03</span>
+              <h3 class="brand-section__title">Враження покупців</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="review-card">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="trophy"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про Camry</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Комфортна посадка, плавний хід і приємні відчуття в щоденних поїздках.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+              <div class="review-card review-card--cool">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="compass"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про RAV4</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Просторий салон, зручність у місті та впевненість під час сімейних подорожей.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="brand-details brand-details--bmw" id="bmw">
+        <div class="container">
+          <div class="brand-banner brand-banner--bmw">
+            <div class="brand-banner__content">
+              <div class="brand-banner__badge">
+                <img src="/cars/logo/bmw.png" alt="Логотип BMW" width="72" height="72" loading="lazy" />
+              </div>
+              <p class="brand-banner__eyebrow">Німецька точність</p>
+              <h2 class="brand-banner__title">BMW</h2>
+              <p class="brand-banner__description">
+                Динаміка, інновації та задоволення від кожного повороту.
+              </p>
+            </div>
+            <div class="brand-banner__aside">
+              <p class="brand-banner__motto" lang="en">Made for pure joy</p>
+              <div class="brand-banner__foundation">
+                <p class="brand-banner__year">1916</p>
+                <p class="brand-banner__caption">Рік заснування</p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--history">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">01</span>
+              <div class="brand-section__intro">
+                <h3 class="brand-section__title">Історія бренду</h3>
+                <p class="brand-section__text">
+                  Історія BMW бере початок у 1916 році та пов’язана з авіаційним виробництвом у Баварії.
+                  Згодом компанія перейшла до мотоциклів і автомобілів, поєднавши інженерну точність із
+                  задоволенням від кермування.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--models">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">02</span>
+              <h3 class="brand-section__title">Дві знакові моделі</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="model-card">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">BMW 3 Series</h4>
+                  <p class="model-card__description">
+                    Спортивний седан, що поєднує точне кермування, динамічний характер і щоденний комфорт.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/bmw-3-series-top.png"
+                  alt="Ілюстрація BMW 3 Series зверху в червоних тонах"
+                  width="1773"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+              <div class="model-card model-card--cool">
+                <div class="model-card__content">
+                  <h4 class="model-card__title">BMW X5</h4>
+                  <p class="model-card__description">
+                    Просторий преміальний кросовер із виразним дизайном і комфортом для далеких подорожей.
+                  </p>
+                </div>
+                <img
+                  class="model-card__image"
+                  src="/cars/models/bmw-x5-top.png"
+                  alt="Ілюстрація BMW X5 зверху в синіх тонах"
+                  width="1774"
+                  height="887"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="brand-section brand-section--reviews">
+            <div class="brand-section__heading">
+              <span class="brand-section__number" aria-hidden="true">03</span>
+              <h3 class="brand-section__title">Враження покупців</h3>
+            </div>
+            <div class="brand-section__list">
+              <div class="review-card">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="trophy"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про 3 Series</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Чітке кермування, збалансована динаміка та задоволення від кожної поїздки.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+              <div class="review-card review-card--cool">
+                <span class="review-card__icon" aria-hidden="true">
+                  <i data-lucide="compass"></i>
+                </span>
+                <div class="review-card__content">
+                  <h4 class="review-card__title">Про X5</h4>
+                  <blockquote class="review-card__quote">
+                    <p>Затишний салон, простір для родини й комфорт навіть на довгих маршрутах.</p>
+                  </blockquote>
+                </div>
+                <i class="review-card__mark" data-lucide="quote" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <p class="contacts__eyebrow">Контакти</p>
+          <h2 class="contacts__title">Зв’яжіться з нами</h2>
+          <p class="contacts__description">
+            Маєте запитання, хочете консультацію або підібрати авто?
+            Ми завжди на зв’язку та раді допомогти.
+          </p>
+          <div class="contacts__body">
+            <form class="contact-form" aria-label="Форма зворотного зв’язку">
+              <div class="contact-form__row">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="contact-name">Ім’я <span aria-hidden="true">*</span></label>
+                  <div class="contact-form__control">
+                    <i data-lucide="user-round" aria-hidden="true"></i>
+                    <input id="contact-name" name="name" type="text" placeholder="Ваше ім’я" autocomplete="name" minlength="2" maxlength="80" required />
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="contact-phone">Телефон <span aria-hidden="true">*</span></label>
+                  <div class="contact-form__control">
+                    <i data-lucide="phone" aria-hidden="true"></i>
+                    <input id="contact-phone" name="phone" type="tel" placeholder="+380 (__) ___ __ __" autocomplete="tel" minlength="10" maxlength="24" required />
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-email">Email <span aria-hidden="true">*</span></label>
+                <div class="contact-form__control">
+                  <i data-lucide="mail" aria-hidden="true"></i>
+                  <input id="contact-email" name="email" type="email" placeholder="example@drive.ua" autocomplete="email" maxlength="254" required />
+                </div>
+              </div>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contact-message">Ваше повідомлення <span aria-hidden="true">*</span></label>
+                <div class="contact-form__control contact-form__control--message">
+                  <i data-lucide="message-square" aria-hidden="true"></i>
+                  <div class="contact-form__message">
+                    <textarea id="contact-message" name="message" placeholder="Напишіть, чим ми можемо вам допомогти..." rows="4" minlength="10" maxlength="500" aria-describedby="contact-counter" required></textarea>
+                    <output class="contact-form__counter" id="contact-counter" for="contact-message">0/500</output>
+                  </div>
+                </div>
+              </div>
+              <button class="contact-form__submit" type="submit">
+                Надіслати
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </button>
+              <p class="contact-form__privacy">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+                Використовуємо ваші дані лише для зворотного зв’язку.
+              </p>
+              <p class="contact-form__status" role="status"></p>
+            </form>
+
+            <aside class="contact-panel">
+              <h3 class="contact-info__heading">Наші контакти</h3>
+              <address class="contact-info">
+                <ul class="contact-info__list">
+                  <li class="contact-info__item">
+                    <span class="contact-info__icon" aria-hidden="true"><i data-lucide="phone"></i></span>
+                    <div class="contact-info__content">
+                      <a class="contact-info__title" href="tel:+380671234567">+380 67 123 45 67</a>
+                      <p class="contact-info__text">Пн–Сб, 9:00 – 19:00</p>
+                    </div>
+                  </li>
+                  <li class="contact-info__item">
+                    <span class="contact-info__icon" aria-hidden="true"><i data-lucide="mail"></i></span>
+                    <div class="contact-info__content">
+                      <a class="contact-info__title" href="mailto:info@drive.ua">info@drive.ua</a>
+                      <p class="contact-info__text">Відповідаємо протягом години</p>
+                    </div>
+                  </li>
+                  <li class="contact-info__item">
+                    <span class="contact-info__icon" aria-hidden="true"><i data-lucide="map-pin"></i></span>
+                    <div class="contact-info__content">
+                      <a class="contact-info__title" href="https://maps.google.com/?q=Київ+Велика+Васильківська+102">м. Київ, вул. Велика Васильківська, 102</a>
+                      <p class="contact-info__text">Наш шоурум завжди відкритий для вас</p>
+                    </div>
+                  </li>
+                </ul>
+              </address>
+              <div class="contact-info__hours">
+                <span class="contact-info__icon" aria-hidden="true"><i data-lucide="clock"></i></span>
+                <div class="contact-info__content">
+                  <p class="contact-info__title">Графік роботи</p>
+                  <p class="contact-info__text">Пн–Сб: 9:00 – 19:00</p>
+                  <p class="contact-info__text">Нд: 10:00 – 17:00</p>
+                </div>
+              </div>
+              <div class="contact-info__services" id="services">
+                <span class="contact-info__icon" aria-hidden="true"><i data-lucide="car-front"></i></span>
+                <div class="contact-info__content">
+                  <p class="contact-info__services-title">Консультація · Тест-драйв · Підбір авто</p>
+                  <p class="contact-info__text">Допоможемо на кожному етапі — від вибору до отримання ключів.</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__columns">
+          <div class="site-footer__brand">
+            <a class="site-footer__logo" href="/" aria-label="DRIVE — головна сторінка">
+              <img src="/drive-wordmark.svg" alt="DRIVE" width="260" height="89" loading="lazy" />
+            </a>
+            <p class="site-footer__tagline">Більше, ніж авто.</p>
+            <ul class="site-footer__socials" aria-label="Соціальні мережі">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <use href="/icons/social.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <use href="/icons/social.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <use href="/icons/social.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://telegram.org/"
+                  aria-label="Telegram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <use href="/icons/social.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="site-footer__info">
+            <nav class="site-footer__nav" aria-label="Навігація у футері">
+              <h2 class="site-footer__heading">Навігація</h2>
+              <ul class="site-footer__links">
+                <li><a href="#brands">Бренди</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#contact-name">Тест-драйв</a></li>
+                <li><a href="#services">Послуги та сервіс</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+              </ul>
+            </nav>
+
+            <div class="site-footer__contacts">
+              <h2 class="site-footer__heading">Контакти</h2>
+              <address class="footer-contact">
+                <ul class="footer-contact__list">
+                  <li class="footer-contact__item">
+                    <span class="footer-contact__icon" aria-hidden="true">
+                      <i data-lucide="phone"></i>
+                    </span>
+                    <div class="footer-contact__content">
+                      <a class="footer-contact__title" href="tel:+380671234567">+380 67 123 45 67</a>
+                      <p class="footer-contact__text">Пн–Сб, 9:00 – 19:00</p>
+                    </div>
+                  </li>
+                  <li class="footer-contact__item">
+                    <span class="footer-contact__icon" aria-hidden="true">
+                      <i data-lucide="mail"></i>
+                    </span>
+                    <div class="footer-contact__content">
+                      <a class="footer-contact__title" href="mailto:info@drive.ua">info@drive.ua</a>
+                      <p class="footer-contact__text">Відповідаємо протягом години</p>
+                    </div>
+                  </li>
+                  <li class="footer-contact__item">
+                    <span class="footer-contact__icon" aria-hidden="true">
+                      <i data-lucide="map-pin"></i>
+                    </span>
+                    <div class="footer-contact__content">
+                      <a
+                        class="footer-contact__title"
+                        href="https://maps.google.com/?q=Київ+Велика+Васильківська+102"
+                      >
+                        м. Київ, вул. Велика Васильківська, 102
+                      </a>
+                      <p class="footer-contact__text">Наш шоурум завжди відкритий для вас</p>
+                    </div>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+    
+        <div class="site-footer__bottom">
+          <p>© 2026 Drive. Усі права захищені.</p>
+          <ul class="site-footer__legal">
+            <li>Політика конфіденційності</li>
+            <li>Умови використання</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+@use 'base';
+@use 'mixins';
+@use 'components/header';
+@use 'components/footer';
+
+.comparison {
+  padding-block: clamp(40px, 5vw, 72px);
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+
+    @include mixins.b_720 {
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
+
+  &__table-wrapper {
+    margin-top: 48px;
+    padding: 16px 32px;
+    overflow-x: auto;
+    border: 1px solid #eeedeb;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 14px 40px -24px #4b42332b;
+
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    @include mixins.b_720 {
+      margin-top: 32px;
+      padding: 8px 16px;
+      border-radius: 18px;
+    }
+  }
+
+  &__content {
+    max-width: 900px;
+    min-width: 0;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    color: #11283c;
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  &__description {
+    max-width: 830px;
+    color: #929da6;
+    font-size: clamp(18px, 1.7vw, 24px);
+    line-height: 1.7;
+  }
+
+  &__note {
+    display: flex;
+    gap: 24px;
+    max-width: 290px;
+    flex-shrink: 0;
+    color: #929da6;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @include mixins.b_960 {
+      max-width: 220px;
+      gap: 16px;
+      letter-spacing: 2px;
+    }
+
+    @include mixins.b_720 {
+      max-width: 320px;
+    }
+  }
+
+  &__icon {
+    width: 46px;
+    height: 58px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #ffb18e;
+    flex-shrink: 0;
+    color: #ff966c;
+    stroke-width: 1.5;
+  }
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 960px;
+  border-collapse: collapse;
+  text-align: left;
+  color: #425361;
+  font-size: 18px;
+  line-height: 1.5;
+
+  th,
+  td {
+    padding: 24px 20px;
+  }
+
+  thead {
+    color: #8c99a3;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    th {
+      font-weight: 700;
+    }
+  }
+
+  tbody {
+    border-top: 1px solid #eeefef;
+
+    tr + tr {
+      border-top: 1px solid #eeefef;
+    }
+  }
+
+  &__brand {
+    width: 22%;
+    font-weight: 400;
+  }
+
+  &__logo {
+    display: block;
+    width: 110px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  &__name {
+    color: #11283c;
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  &__description {
+    max-width: 220px;
+    margin-top: 8px;
+    color: #929da6;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__model {
+    color: #263b4c;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__country {
+    padding: 2px 12px;
+    border-radius: 12px;
+    background: #edf4f8;
+    color: #5783a0;
+    font-size: 16px;
+  }
+
+  @include mixins.b_960 {
+    font-size: 16px;
+
+    th,
+    td {
+      padding: 20px 16px;
+    }
+  }
+}

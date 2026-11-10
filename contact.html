@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Заповніть форму — DRIVE</title>
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <section class="contact-page">
+        <div class="container">
+          <h1 class="contact-page__title">Заповніть форму</h1>
+          <p class="contact-page__description">
+            Розкажіть нам про себе та бажане авто — ми підберемо найкращі варіанти з нашого
+            автосалону.
+          </p>
+          <form class="request-form" id="car-request">
+            <div class="request-form__panel">
+              <h2 class="request-form__heading">
+                <i class="request-form__icon" data-lucide="user-round" aria-hidden="true"></i>
+                Особисті дані
+              </h2>
+              <div class="request-field">
+                <label class="request-field__label" for="first-name">Ім’я</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="user-round" aria-hidden="true"></i>
+                  <input
+                    class="request-field__input"
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    placeholder="Введіть ваше ім’я"
+                    autocomplete="given-name"
+                  />
+                </div>
+              </div>
+              <div class="request-field">
+                <label class="request-field__label" for="last-name">Прізвище</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="user-round" aria-hidden="true"></i>
+                  <input
+                    class="request-field__input"
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    placeholder="Введіть ваше прізвище"
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+              <div class="request-field">
+                <label class="request-field__label" for="birth-date">Дата народження</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="calendar-days" aria-hidden="true"></i>
+                  <input
+                    class="request-field__input"
+                    id="birth-date"
+                    name="birth-date"
+                    type="date"
+                    placeholder=""
+                    autocomplete="bday"
+                  />
+                </div>
+              </div>
+              <fieldset class="request-options">
+                <legend class="request-field__label">Стать</legend>
+                <div class="request-options__list">
+                  <label class="request-choice">
+                    <input type="radio" name="gender" value="male" checked />
+                    <span>Чоловіча</span>
+                  </label>
+                  <label class="request-choice">
+                    <input type="radio" name="gender" value="female" />
+                    <span>Жіноча</span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="request-field">
+                <label class="request-field__label" for="experience">Стаж водіння</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="circle-gauge" aria-hidden="true"></i>
+                  <select
+                    class="request-field__input request-field__input--select"
+                    id="experience"
+                    name="experience"
+                  >
+                    <option value="">Оберіть стаж</option>
+                    <option value="none">Без досвіду</option>
+                    <option value="under-1">До 1 року</option>
+                    <option value="1-3">1–3 роки</option>
+                    <option value="3-5">3–5 років</option>
+                    <option value="over-5">Понад 5 років</option>
+                  </select>
+                  <i
+                    class="request-field__chevron"
+                    data-lucide="chevron-down"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="request-form__panel">
+              <h2 class="request-form__heading">
+                <i class="request-form__icon" data-lucide="phone" aria-hidden="true"></i>
+                Контакти
+              </h2>
+              <div class="request-field">
+                <label class="request-field__label" for="email">Email</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="mail" aria-hidden="true"></i>
+                  <input
+                    class="request-field__input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+              <div class="request-field">
+                <label class="request-field__label" for="phone">Телефон</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="phone" aria-hidden="true"></i>
+                  <input
+                    class="request-field__input"
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="+38 (0XX) XXX-XX-XX"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+              <div class="request-field">
+                <label class="request-field__label" for="comment">Адреса / Коментар</label>
+                <div class="request-field__control">
+                  <i
+                    class="request-field__icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  <textarea
+                    class="request-field__input request-field__input--textarea"
+                    id="comment"
+                    name="comment"
+                    rows="6"
+                    placeholder="Вкажіть адресу або додайте коментар (за бажанням)"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="request-form__panel">
+              <h2 class="request-form__heading">
+                <i class="request-form__icon" data-lucide="car-front" aria-hidden="true"></i>
+                Побажання щодо авто
+              </h2>
+              <div class="request-field">
+                <label class="request-field__label" for="brand">Марка</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="layers" aria-hidden="true"></i>
+                  <select
+                    class="request-field__input request-field__input--select"
+                    id="brand"
+                    name="brand"
+                  >
+                    <option value="">Оберіть марку</option>
+                    <option value="ford">Ford</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="bmw">BMW</option>
+                  </select>
+                  <i
+                    class="request-field__chevron"
+                    data-lucide="chevron-down"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <div class="request-field">
+                <label class="request-field__label" for="model">Модель</label>
+                <div class="request-field__control">
+                  <i class="request-field__icon" data-lucide="layers" aria-hidden="true"></i>
+                  <select
+                    class="request-field__input request-field__input--select"
+                    id="model"
+                    name="model"
+                    disabled
+                  >
+                    <option value="">Оберіть модель</option>
+                  </select>
+                  <i
+                    class="request-field__chevron"
+                    data-lucide="chevron-down"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <label class="request-choice request-choice--used">
+                <input type="checkbox" name="used" />
+                <span>Вживане авто</span>
+              </label>
+              <fieldset class="request-options">
+                <legend class="request-field__label">Колір</legend>
+                <div class="request-options__list">
+                  <label class="request-choice">
+                    <input type="radio" name="color" value="red" checked />
+                    <span>Червоний</span>
+                  </label>
+                  <label class="request-choice">
+                    <input type="radio" name="color" value="black" />
+                    <span>Чорний</span>
+                  </label>
+                  <label class="request-choice">
+                    <input type="radio" name="color" value="blue" />
+                    <span>Синій</span>
+                  </label>
+                  <label class="request-choice">
+                    <input type="radio" name="color" value="white" />
+                    <span>Білий</span>
+                  </label>
+                  <label class="request-choice">
+                    <input type="radio" name="color" value="gray" />
+                    <span>Сірий</span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="request-budget">
+                <label class="request-field__label" for="budget">
+                  Бюджет, тис. $
+                  <output class="request-budget__value" for="budget" id="budget-value">40</output>
+                </label>
+                <input
+                  class="request-budget__range"
+                  type="range"
+                  id="budget"
+                  name="budget"
+                  min="10"
+                  max="80"
+                  step="1"
+                  value="40"
+                  aria-describedby="budget-value"
+                />
+                <div class="request-budget__scale" aria-hidden="true">
+                  <span>10</span>
+                  <span>20</span>
+                  <span>30</span>
+                  <span>40</span>
+                  <span>50</span>
+                  <span>60</span>
+                  <span>70</span>
+                  <span>80</span>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="request-actions">
+            <button
+              class="request-actions__button request-actions__button--cancel"
+              type="reset"
+              form="car-request"
+            >
+              Скасувати
+            </button>
+            <button
+              class="request-actions__button request-actions__button--submit"
+              type="submit"
+              form="car-request"
+            >
+              Надіслати
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <script type="module" src="/src/contact.js"></script>
+  </body>
+</html>

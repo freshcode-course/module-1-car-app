@@ -1,0 +1,273 @@
+@use '../mixins';
+
+.site-header {
+  border-radius: 0 0 18px 18px;
+  background: #fdfcfb;
+  box-shadow: 0 28px 50px -15px #473b2926;
+}
+
+.header-inner {
+  padding-block: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  @include mixins.b_1440 {
+    gap: 20px;
+    min-height: 128px;
+  }
+  @include mixins.b_720 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding-block: 24px;
+  }
+}
+
+.brand {
+  align-items: center;
+  flex-shrink: 0;
+  @include mixins.b_720 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.brand-logo {
+  width: 232px;
+  height: auto;
+  @include mixins.b_1440 {
+    width: 190px;
+  }
+}
+
+.brand-nav {
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding-inline: 14px;
+    @include mixins.b_1440 {
+      padding-inline: 6px;
+    }
+    @include mixins.b_720 {
+      flex: 1;
+      padding-inline: 3px;
+    }
+  }
+
+  li + li {
+    border-left: 1px solid #e8e7e5;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 28px;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    transition: all 160ms ease;
+    @include mixins.b_1440 {
+      min-height: 80px;
+      padding: 14px 18px;
+      gap: 14px;
+      font-size: 17px;
+      border-radius: 17px;
+    }
+    @include mixins.b_720 {
+      flex-direction: column;
+      gap: 8px;
+      min-height: 85px;
+      padding: 10px 7px;
+      font-size: 14px;
+      border-radius: 12px;
+    }
+    @include mixins.b_480 {
+      gap: 8px;
+    }
+  }
+
+  a.is-active,
+  a:hover {
+    border-color: var(--accent);
+    background: #fff9f54d;
+    box-shadow: 0 10px 23px -10px #ff572e75;
+  }
+
+  svg {
+    color: gray;
+    flex-shrink: 0;
+    @include mixins.b_720 {
+      display: none;
+    }
+    @include mixins.b_480 {
+      display: none;
+    }
+  }
+
+  a.is-featured svg,
+  a:hover svg {
+    color: var(--accent);
+  }
+
+  @include mixins.b_720 {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid #e8e7e5;
+  }
+}
+
+.car-logo {
+  width: 100%;
+  max-height: 44px;
+  height: 100%;
+  object-fit: contain;
+  &--ford {
+    @include mixins.b_720 {
+      width: 35px;
+      height: 21px;
+    }
+  }
+  &--toyota {
+    @include mixins.b_720 {
+      width: 30px;
+      height: 26px;
+    }
+  }
+  &--bmw {
+    @include mixins.b_720 {
+      width: 29px;
+      height: 30px;
+    }
+  }
+}
+
+.header-note {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 19px;
+  line-height: 1.6;
+  white-space: nowrap;
+  @include mixins.b_1440 {
+    font-size: 14px;
+    padding-left: 18px;
+    margin-left: 0;
+    gap: 14px;
+  }
+  &::before {
+    @include mixins.b_1440 {
+      width: 200px;
+      height: 72px;
+      top: -10px;
+    }
+  }
+  @include mixins.b_960 {
+    display: none;
+  }
+}
+
+.premium-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: #fff0e7;
+  color: var(--accent);
+
+  svg {
+    width: 36px;
+    height: 36px;
+    @include mixins.b_1440 {
+      width: 29px;
+      height: 29px;
+    }
+  }
+
+  @include mixins.b_1440 {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.premium-copy {
+  .premium-copy__title {
+    font-weight: 700;
+  }
+
+  .premium-copy__text {
+    color: #858780;
+    font-weight: 400;
+  }
+}
+
+.premium-dot {
+  color: var(--accent);
+}
+
+
+.header-actions {
+  text-align: right;
+
+  &__links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+
+    @include mixins.b_720 {
+      justify-content: center;
+    }
+  }
+
+  @include mixins.b_720 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #596168;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: color 160ms ease, background-color 160ms ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent);
+  }
+
+  &:hover,
+  &[aria-current='page'] {
+    color: var(--accent);
+    background: #fff0e7;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Таблиця порівняння — DRIVE</title>
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <section class="comparison">
+        <div class="container comparison__inner">
+          <div class="comparison__heading">
+            <div class="comparison__content">
+              <h1 class="comparison__title">Порівняння моделей</h1>
+              <p class="comparison__description">
+                Ознайомтеся з основними характеристиками найпопулярніших моделей та оберіть авто,
+                яке підходить саме вам.
+              </p>
+            </div>
+            <div class="comparison__note">
+              <i class="comparison__icon" data-lucide="car-front" aria-hidden="true"></i>
+              <p>Ford — надійний вибір для кожної подорожі</p>
+            </div>
+          </div>
+          <div
+            class="comparison__table-wrapper"
+            role="region"
+            aria-label="Таблиця порівняння моделей"
+            tabindex="0"
+          >
+            <table
+              class="comparison-table"
+              aria-label="Характеристики автомобілів Ford, Toyota та BMW"
+            >
+              <thead>
+                <tr>
+                  <th scope="col" rowspan="2">Бренд</th>
+                  <th scope="col" rowspan="2">Модель</th>
+                  <th scope="col" rowspan="2">Країна</th>
+                  <th scope="colgroup" colspan="2">Вага (кг)</th>
+                  <th scope="col" rowspan="2">Макс. швидкість (км/год)</th>
+                  <th scope="col" rowspan="2">Рік випуску</th>
+                </tr>
+                <tr>
+                  <th scope="col">Пустий</th>
+                  <th scope="col">Повний</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="comparison-table__brand" scope="rowgroup" rowspan="2">
+                    <img
+                      class="comparison-table__logo"
+                      src="/cars/logo/ford.png"
+                      alt=""
+                      width="110"
+                      height="60"
+                      loading="lazy"
+                    />
+                    <span class="comparison-table__name">Ford</span>
+                    <p class="comparison-table__description">
+                      Інновації, драйв та свобода бути собою.
+                    </p>
+                  </th>
+                  <th class="comparison-table__model" scope="row">Mondeo 4</th>
+                  <td><span class="comparison-table__country">USA</span></td>
+                  <td>1597</td>
+                  <td>2300</td>
+                  <td>200</td>
+                  <td>2010</td>
+                </tr>
+                <tr>
+                  <th class="comparison-table__model" scope="row">Fiesta 1.0</th>
+                  <td><span class="comparison-table__country">USA</span></td>
+                  <td>1050</td>
+                  <td>1200</td>
+                  <td>165</td>
+                  <td>2015</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th class="comparison-table__brand" scope="rowgroup" rowspan="2">
+                    <img
+                      class="comparison-table__logo"
+                      src="/cars/logo/toyota.png"
+                      alt=""
+                      width="110"
+                      height="60"
+                      loading="lazy"
+                    />
+                    <span class="comparison-table__name">Toyota</span>
+                    <p class="comparison-table__description">Надійність у кожній деталі.</p>
+                  </th>
+                  <th class="comparison-table__model" scope="row">RAV4</th>
+                  <td><span class="comparison-table__country">Japan</span></td>
+                  <td>1550</td>
+                  <td>2050</td>
+                  <td>190</td>
+                  <td>2015</td>
+                </tr>
+                <tr>
+                  <th class="comparison-table__model" scope="row">Camry</th>
+                  <td><span class="comparison-table__country">Japan</span></td>
+                  <td>1560</td>
+                  <td>2030</td>
+                  <td>210</td>
+                  <td>2018</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th class="comparison-table__brand" scope="rowgroup" rowspan="2">
+                    <img
+                      class="comparison-table__logo"
+                      src="/cars/logo/bmw.png"
+                      alt=""
+                      width="110"
+                      height="60"
+                      loading="lazy"
+                    />
+                    <span class="comparison-table__name">BMW</span>
+                    <p class="comparison-table__description">Сила в деталях.</p>
+                  </th>
+                  <th class="comparison-table__model" scope="row">X5</th>
+                  <td><span class="comparison-table__country">Germany</span></td>
+                  <td>2150</td>
+                  <td>2900</td>
+                  <td>245</td>
+                  <td>2020</td>
+                </tr>
+                <tr>
+                  <th class="comparison-table__model" scope="row">i4</th>
+                  <td><span class="comparison-table__country">Germany</span></td>
+                  <td>2100</td>
+                  <td>2300</td>
+                  <td>225</td>
+                  <td>2022</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <script type="module" src="/src/comparison.js"></script>
+  </body>
+</html>

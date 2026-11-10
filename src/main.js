@@ -1,41 +1,6 @@
-import './style.scss'
+import './assets/css/main.scss'
 
-import {
-  ArrowRight,
-  ArrowUpRight,
-  CarFront,
-  Clock,
-  Compass,
-  Crown,
-  Mail,
-  MapPin,
-  MessageSquare,
-  Phone,
-  Quote,
-  ShieldCheck,
-  Trophy,
-  UserRound,
-  createIcons,
-} from 'lucide'
-
-createIcons({
-  icons: {
-    ArrowRight,
-    ArrowUpRight,
-    CarFront,
-    Clock,
-    Compass,
-    Crown,
-    Mail,
-    MapPin,
-    MessageSquare,
-    Phone,
-    Quote,
-    ShieldCheck,
-    Trophy,
-    UserRound,
-  },
-})
+import './icons.js'
 
 const contactForm = document.querySelector('.contact-form')
 const contactMessage = contactForm.querySelector('[name="message"]')

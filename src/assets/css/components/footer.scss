@@ -1,0 +1,308 @@
+@use '../mixins';
+
+.site-footer {
+  padding-top: 56px;
+  border-top: 1px solid #f0eeeb;
+  border-radius: 0 0 28px 28px;
+  background: #fff;
+
+  @include mixins.b_600 {
+    padding-top: 40px;
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    padding-bottom: 48px;
+
+    @include mixins.b_1280 {
+      gap: 36px;
+    }
+
+    @include mixins.b_960 {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    @include mixins.b_600 {
+      gap: 36px;
+      padding-bottom: 36px;
+    }
+  }
+
+  &__brand {
+    min-width: 0;
+    padding-top: 20px;
+
+    @include mixins.b_600 {
+      padding-top: 0;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 100%;
+
+    img {
+      display: block;
+      width: 240px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__tagline {
+    margin-top: 12px;
+    color: #42515c;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin-top: 20px;
+      background: var(--accent);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 64px 0 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: #fff2eb;
+      color: var(--accent);
+      transition: background-color 160ms ease;
+
+      &:hover {
+        background: #ffe4d4;
+      }
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    @include mixins.b_600 {
+      margin-top: 28px;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 28px;
+    color: #34434c;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      margin-top: 18px;
+      background: var(--accent);
+    }
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li + li {
+      margin-top: 22px;
+
+      @include mixins.b_600 {
+        margin-top: 16px;
+      }
+    }
+
+    a {
+      color: #26323b;
+      font-size: 20px;
+      line-height: 1.4;
+
+      @include mixins.b_600 {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__contacts {
+    min-width: 0;
+
+    @include mixins.b_600 {
+      width: calc(70% - 16px);
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+    gap: 128px;
+
+    @include mixins.b_1280 {
+      gap: 36px;
+    }
+
+    @include mixins.b_600 {
+      width: 100%;
+      gap: 16px;
+    }
+  }
+
+  &__nav {
+    min-width: 0;
+
+    @include mixins.b_600 {
+      width: 30%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding-block: 28px;
+    border-top: 1px solid #e9e9e7;
+    color: #7b8491;
+    font-size: 15px;
+    line-height: 1.5;
+
+    @include mixins.b_960 {
+      gap: 16px;
+    }
+  }
+
+  &__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+  }
+}
+
+.footer-contact {
+  font-style: normal;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li + li {
+      margin-top: 24px;
+
+      @include mixins.b_600 {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include mixins.b_600 {
+      gap: 8px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #fff2eb;
+    color: var(--accent);
+
+    svg {
+      width: 27px;
+      height: 27px;
+      stroke-width: 1.8;
+    }
+
+    @include mixins.b_600 {
+      width: 28px;
+      height: 28px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__content {
+    min-width: 0;
+    padding-top: 5px;
+
+    @include mixins.b_600 {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    color: #26323b;
+    font-size: 19px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+
+    @include mixins.b_600 {
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__text {
+    margin-top: 6px;
+    color: #9299a3;
+    font-size: 15px;
+    line-height: 1.5;
+
+    @include mixins.b_600 {
+      margin-top: 4px;
+      font-size: 12px;
+    }
+  }
+}
